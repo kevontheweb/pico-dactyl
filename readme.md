@@ -57,4 +57,4 @@ circuit diagram:
 ## references
 
 ![pico pinout](./pico-pinout.png)
-![mcp pinout](./mcp-pinout.png)
+![io expander pinout](./io-expander-circuit.png)
