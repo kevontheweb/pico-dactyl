@@ -1,8 +1,4 @@
-<style>
-    .markdown-body img { background-color: white !important }
-</style>
-
-# dactyl
+# PicoDactyl
 
 inspiration:
 ![inpiration](./dactyl.jpg)
