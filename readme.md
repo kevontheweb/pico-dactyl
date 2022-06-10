@@ -5,6 +5,9 @@ inspiration:
 
 ## hardware
 
+The following are links to purchase hardware at [microrobotics.org.za](https://microrobotics.org.za).
+If you are not located in South Africa you should use your own local electronics store.
+
 - [rpi pico](https://www.robotics.org.za/PI-PICO)
   - [datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 - [pcf8575](https://www.robotics.org.za/PCF8575-MOD)
@@ -16,16 +19,13 @@ inspiration:
       - [example circuit](https://www.best-microcontroller-projects.com/mcp23017.html)
       - [another example schematic](https://cdn-learn.adafruit.com/assets/assets/000/036/490/original/lcds___displays_schem.png?1476373463)
 - [rj 45 connectors](https://www.robotics.org.za/RJ45-CON-PCB)
-  - provides eight wires
+  - provides up to eight wires
 - [usb B printer cable](https://www.robotics.org.za/PAN-USBB-MUSB)
 - [EC11 rotary encoder](https://www.robotics.org.za/EC11-VER-20)
 - [M3 brass heat set inserts](https://www.robotics.org.za/SUL-M3-20)
 - cherry mx brown switches (salvaged from another keyboard)
 
 ## design
-
-- used [this dactyl case generator](https://dactyl.siskam.link/manuform) to generate the OpenSCAD scripts.
-  - see ``manuform-minidox-vx.x.json``
 
 - minidox/corne design
   - 3x6 for main clusters
@@ -37,7 +37,28 @@ inspiration:
   - printed in transparent (translucent) PLA
     - print time is estimated 18 hours per side (excluding bottom plate)
   - will need to design inserts for the rj45 connectors and for the usb B adaptor as well as the pi pico holder
+    - loligag sled format
+      - [example](https://www.printables.com/model/152130-dactyl-maniform-pro-micro-v2-type-c-sled)
+    - [wally plate gen](https://www.thingiverse.com/thing:47956/files)
   - will also need to design holder for led rings (probably on the base plate)
+  - holder for the pi pico and the io expander
+    - [this on from printables.com](https://www.printables.com/model/106736-raspberry-pi-pico-spacer-standoff)
+  - use [this converter](https://www.thingiverse.com/thing:3770166) to mount an ec11 encoder in an mx socket.
+
+- use [this dactyl case generator](https://github.com/joshreve/dactyl-keyboard) that uses open cascade and generates much neater models
+  - see ``run_config.json`` for my config used to generate the case
+  - installation was fairly simple:
+    1. install docker desktop
+    2. download the dactyl case generator repo
+    3. run the ``build_docker.bat`` script.
+    4. in docker desktop open the DM-shell container in terminal and run ``bash``
+    5. run ``generate_configuration.py``
+    6. edit ``src/run_config.json`` (don't forget to save)
+    7. run ``python3 dactyl_manuform.py``
+    8. open ``things/DM_left.scad`` and preview it in openSCAD
+    9. repeat steps 6-8 until happy with the case.
+    10. compile the case files in openSCAD and export the stls
+
 
 ## construction
 
