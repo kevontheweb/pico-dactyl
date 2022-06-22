@@ -1,5 +1,7 @@
 # PicoDactyl
 
+**THIS IS A WORK IN PROGRESS**
+
 inspiration:
 ![inpiration](./dactyl.jpg)
 
@@ -27,7 +29,7 @@ If you are not located in South Africa you should use your own local electronics
 
 ## design
 
-- minidox/corne design
+- minidox/corne/reviung inspired design
   - 3x6 for main clusters
   - 3/4 keys per hand for thumb cluster
     - can therefore use 2 3x7 matrices and use the rj45 connector for scl/sda/vbus/gnd/v+
@@ -45,20 +47,28 @@ If you are not located in South Africa you should use your own local electronics
     - [this on from printables.com](https://www.printables.com/model/106736-raspberry-pi-pico-spacer-standoff)
   - use [this converter](https://www.thingiverse.com/thing:3770166) to mount an ec11 encoder in an mx socket.
 
-- use [this dactyl case generator](https://github.com/joshreve/dactyl-keyboard) that uses open cascade and generates much neater models
-  - see ``run_config.json`` for my config used to generate the case
-  - installation was fairly simple:
-    1. install docker desktop
-    2. download the dactyl case generator repo
-    3. run the ``build_docker.bat`` script.
-    4. in docker desktop open the DM-shell container in terminal and run ``bash``
-    5. run ``generate_configuration.py``
-    6. edit ``src/run_config.json`` (don't forget to save)
-    7. run ``python3 dactyl_manuform.py``
-    8. open ``things/DM_left.scad`` and preview it in openSCAD
-    9. repeat steps 6-8 until happy with the case.
-    10. compile the case files in openSCAD and export the stls
+I used [this dactyl case generator](https://github.com/joshreve/dactyl-keyboard) that uses open cascade and generates much neater models (cleaner stls).
 
+- see ``run_config.json`` for my config used to generate the case
+- installation was fairly simple:
+  1. install docker desktop
+  2. download the dactyl case generator repo
+  3. run the ``build_docker.bat`` script.
+  4. in docker desktop open the DM-shell container in terminal and run ``bash``
+  5. run ``generate_configuration.py``
+  6. edit ``src/run_config.json`` (don't forget to save)
+  7. run ``python3 dactyl_manuform.py``
+  8. open ``things/DM_left.scad`` and preview it in openSCAD
+  9. repeat steps 6-8 until happy with the case.
+  10. compile the case files in openSCAD and export the stls
+
+my tweaks were:
+
+- 3x6 design with 3 keys on each thumb cluster
+- remove oled clips (use ``null``)
+- make screw posts larger to fit my inserts
+- import into tinkercad to make holes for the connectors and attach mounts for the controller boards
+- cleanup mesh in blender (some of the screw posts were sticking through the outside of the case).
 
 ## construction
 
