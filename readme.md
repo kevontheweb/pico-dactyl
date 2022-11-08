@@ -79,6 +79,18 @@ I am using onShape for the time being and it is my first time actually using a r
 
 ![custom curvy case](https://user-images.githubusercontent.com/78508907/200520518-5362a0e3-d372-4dba-8b42-34cc887bba1f.png)
 
+## firmware
+
+IO expander:
+
+- [some example firmware using an IO expander](https://github.com/KMKfw/kmk_firmware/blob/74fa1fb52e41b95c1df9047e1ffff39001bb67e6/user_keymaps/dzervas/lab68.py)
+- [more example firmware with pcf8575 ](https://github.com/kevin-nel/PyOledukey/blob/master/CircuitPython/kb.py)(commented out)
+- [adafruit pcf8575 example](https://learn.adafruit.com/adafruit-pcf8575/overview)
+- [adafruit circuit python module for the pcf8575](https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx)
+
+Pi Pico
+
+- mostly just going to try [KMK](https://github.com/KMKfw/kmk_firmware) there are lots of examples
 
 ## construction
 
