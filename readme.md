@@ -3,6 +3,7 @@
 **THIS IS A WORK IN PROGRESS**
 
 inspiration:
+
 ![inpiration](./dactyl.jpg)
 
 ## hardware
