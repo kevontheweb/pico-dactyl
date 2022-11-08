@@ -70,6 +70,15 @@ my tweaks were:
 - import into tinkercad to make holes for the connectors and attach mounts for the controller boards
 - cleanup mesh in blender (some of the screw posts were sticking through the outside of the case).
 
+### **edit**: Custom case?
+
+I am currently working on a custom dactylesqu case inspired by the skeletyl. I want to try to close all the gaps without making it look spikey.
+Doing it from scratch will also make the connectors a bit more polished than my attempts at hacking together stls in tinkercad.
+I am using onShape for the time being and it is my first time actually using a real cad package so this might take a while.
+
+![custom curvy case](https://user-images.githubusercontent.com/78508907/200520518-5362a0e3-d372-4dba-8b42-34cc887bba1f.png)
+
+
 ## construction
 
 - do columns/rows and diodes first
