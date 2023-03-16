@@ -1,6 +1,8 @@
 # PicoDactyl
 
-**THIS IS A WORK IN PROGRESS**
+> **THIS HAS BEEN ARCHIVED**
+> I am leaving this here because it has a pretty decent readme with the thought process for desighning a handware that I will probably want to come back to.
+> I printed half the dactyl and then realised i do not like how it feels.
 
 inspiration:
 
